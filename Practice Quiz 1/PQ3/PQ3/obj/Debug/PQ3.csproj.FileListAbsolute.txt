@@ -1,0 +1,5 @@
+c:\users\exper\onedrive\documents\visual studio 2015\Projects\PQ3\PQ3\bin\Debug\PQ3.exe.config
+c:\users\exper\onedrive\documents\visual studio 2015\Projects\PQ3\PQ3\bin\Debug\PQ3.exe
+c:\users\exper\onedrive\documents\visual studio 2015\Projects\PQ3\PQ3\bin\Debug\PQ3.pdb
+c:\users\exper\onedrive\documents\visual studio 2015\Projects\PQ3\PQ3\obj\Debug\PQ3.exe
+c:\users\exper\onedrive\documents\visual studio 2015\Projects\PQ3\PQ3\obj\Debug\PQ3.pdb

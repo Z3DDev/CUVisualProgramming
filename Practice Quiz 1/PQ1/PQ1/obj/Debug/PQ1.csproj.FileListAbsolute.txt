@@ -1,0 +1,6 @@
+c:\users\exper\onedrive\documents\visual studio 2015\Projects\PQ1\PQ1\bin\Debug\PQ1.exe.config
+c:\users\exper\onedrive\documents\visual studio 2015\Projects\PQ1\PQ1\bin\Debug\PQ1.exe
+c:\users\exper\onedrive\documents\visual studio 2015\Projects\PQ1\PQ1\bin\Debug\PQ1.pdb
+c:\users\exper\onedrive\documents\visual studio 2015\Projects\PQ1\PQ1\obj\Debug\PQ1.csprojResolveAssemblyReference.cache
+c:\users\exper\onedrive\documents\visual studio 2015\Projects\PQ1\PQ1\obj\Debug\PQ1.exe
+c:\users\exper\onedrive\documents\visual studio 2015\Projects\PQ1\PQ1\obj\Debug\PQ1.pdb
