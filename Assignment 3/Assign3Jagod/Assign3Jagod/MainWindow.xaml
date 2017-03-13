@@ -1,0 +1,73 @@
+﻿<Window x:Class="Assign3Jagod.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Assign3Jagod"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <TabControl x:Name="tabControl" HorizontalAlignment="Left" Height="323" VerticalAlignment="Top" Width="520" Margin="0,0,0,-0.2">
+            <TabItem Header="Multiple Choice">
+                <Grid Background="#FFE5E5E5">
+                    <Label x:Name="label" Content="What is Captain America's &#xD;&#xA;real name?" HorizontalAlignment="Left" Height="47" Margin="31,39,0,0" VerticalAlignment="Top" Width="153"/>
+                    <Label x:Name="label1" Content="Who portrays the current &#xD;&#xA;Ant Man in the MCU?" HorizontalAlignment="Left" Height="47" Margin="320,39,0,0" VerticalAlignment="Top" Width="166"/>
+                    <RadioButton x:Name="questionCaptainOne" Content="Jake Rogers" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="58,102,0,0"/>
+                    <RadioButton x:Name="questionCaptainTwo" Content="Steve Rogers" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="58,136,0,0"/>
+                    <RadioButton x:Name="questionCaptainThree" Content="Bucky Barnes" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="58,173,0,0"/>
+                    <RadioButton x:Name="questionCaptainFour" Content="Sam Wilson" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="58,208,0,0"/>
+                    <RadioButton x:Name="questionAntOne" Content="Paul Rudd" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="350,102,0,0"/>
+                    <RadioButton x:Name="questionAntTwo" Content="Michael Douglas" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="350,136,0,0"/>
+                    <RadioButton x:Name="questionAntThree" Content="Corey Stoll" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="350,173,0,0"/>
+                    <RadioButton x:Name="questionAntFour" Content="Michael Pena" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="350,208,0,0"/>
+
+                </Grid>
+            </TabItem>
+            <TabItem Header="Multiple Answer">
+                <Grid Background="#FFE5E5E5">
+                    <Label x:Name="label2" Content="Who are the Guardians of the Galaxy?" HorizontalAlignment="Left" Height="34" Margin="10,55,0,0" VerticalAlignment="Top" Width="212"/>
+                    <Label x:Name="label3" Content="Who Appeared in Captain America: &#xD;&#xA;Civil War" HorizontalAlignment="Left" Height="44" Margin="306,45,0,0" VerticalAlignment="Top" Width="198"/>
+                    <CheckBox x:Name="checkGalaxyOne" Content="Star Lord" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="72,98,0,0"/>
+                    <CheckBox x:Name="checkGalaxyTwo" Content="Yondu" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="72,127,0,0"/>
+                    <CheckBox x:Name="checkGalaxyThree" Content="Gamora" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="72,159,0,0"/>
+                    <CheckBox x:Name="checkGalaxyFour" Content="Groot" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="72,191,0,0"/>
+                    <CheckBox x:Name="checkGalaxyFive" Content="Drax" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="72,221,0,0"/>
+                    <CheckBox x:Name="checkCivilOne" Content="Black Panther" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="348,98,0,0"/>
+                    <CheckBox x:Name="checkCivilTwo" Content="Thunderbolt Ross" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="348,127,0,0"/>
+                    <CheckBox x:Name="checkCivilThree" Content="Agent 23" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="348,159,0,0"/>
+                    <CheckBox x:Name="checkCivilFour" Content="Giant Man" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="348,191,0,0"/>
+                    <CheckBox x:Name="checkCivilFive" Content="Nick Fury" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="348,221,0,0"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Combo Box">
+                <Grid Background="#FFE5E5E5">
+                    <ComboBox x:Name="comboTony" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="60,138,0,0">
+                        <ComboBoxItem>Philanthropist</ComboBoxItem>
+                        <ComboBoxItem>Millionaire</ComboBoxItem>
+                        <ComboBoxItem>Entrepreneur</ComboBoxItem>
+                        <ComboBoxItem>Caring</ComboBoxItem>
+                    </ComboBox>
+                    <ComboBox x:Name="comboGems" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="321,138,0,0">
+                        <ComboBoxItem>Soul</ComboBoxItem>
+                        <ComboBoxItem>Time</ComboBoxItem>
+                        <ComboBoxItem>Space</ComboBoxItem>
+                        <ComboBoxItem>Mind</ComboBoxItem>
+                        <ComboBoxItem>Reality</ComboBoxItem>
+                        <ComboBoxItem>Power</ComboBoxItem>
+                    </ComboBox>
+                    <Label x:Name="label4" Content="Tony Stark is often described &#xD;&#xA;as being what?" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="40,96,0,0" Width="166"/>
+                    <Label x:Name="label5" Content="Which Infinity Gem has yet to &#xD;&#xA;appear in the MCU?" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="305,96,0,0" Width="183" Height="43"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Fill-In the Blank">
+                <Grid Background="#FFE5E5E5">
+                    <TextBox x:Name="textBoxOne" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="75,221,0,0"/>
+                    <TextBox x:Name="textBoxTwo" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="351,221,0,0"/>
+                    <Image x:Name="image" Height="109" VerticalAlignment="Top" Margin="31,92,273,0" Source="d228fb5c7a96e1421bf02a7557cf4764761a4ec2.png" StretchDirection="DownOnly"/>
+                    <Image x:Name="image_Copy" HorizontalAlignment="Left" Height="176" VerticalAlignment="Top" Width="144" Margin="340,40,0,0" Source="Hawkeye-PNG-File.png"/>
+                    <Label x:Name="label7" Content="Who are these characters?" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="178,10,0,0" Width="146"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
