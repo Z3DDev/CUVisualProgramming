@@ -11,21 +11,24 @@ namespace Console3
         static void Main(string[] args)
         {
             float final = 0;
+            bool quit = false;
 
-            Console.WriteLine("Please Enter a Number or 'quit'");
-
-            while (Console.ReadLine() != "quit")
+            while(quit == false)
             {
-                string input = Console.ReadLine();
-                float number = float.Parse(input);
-                final += number;
                 Console.WriteLine("Please Enter a Number or 'quit'");
+                string input = Console.ReadLine();
+                if (input == "quit")
+                {
+                    break;
+                }
+                else
+                {
+                    float number = float.Parse(input);
+                    final += number;
+                }
             }
-            else
-            {
-                Console.WriteLine(final);
-            }
-
+            Console.WriteLine(final);
+            Console.ReadLine();
         }
     }
 }
