@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "carExample", "carExample\carExample.csproj", "{D95ABFD7-C6B6-4A7F-AC29-424CDDED4CFA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D95ABFD7-C6B6-4A7F-AC29-424CDDED4CFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D95ABFD7-C6B6-4A7F-AC29-424CDDED4CFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D95ABFD7-C6B6-4A7F-AC29-424CDDED4CFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D95ABFD7-C6B6-4A7F-AC29-424CDDED4CFA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
