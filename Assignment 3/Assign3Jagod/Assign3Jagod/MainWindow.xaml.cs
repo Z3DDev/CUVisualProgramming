@@ -27,30 +27,30 @@ namespace Assign3Jagod
 
         private void submitButton_Click(object sender, RoutedEventArgs e)
         {
-            double correct = 0;
-            double incorrect = 0;
-            double avgScore = 0;
-            bool qOne = false;
-            bool qTwo = false;
-            bool qThree = false;
-            bool qFour = false;
-            bool qFive = false;
-            bool qSix = false;
-            bool qSeven = false;
-            bool qEight = false;
+            double correct = 0; //Setup to count # of correct answers
+            double incorrect = 0; //Setup to count # of incorrect answers
+            double avgScore = 0; //Setup to later calculate the average score (8 total questions)
+
+            //Booleans set to false in order for while loops to run, each loop contains If and Else statements 
+            //(occasionally an Else If statement)
+            bool qOne = false; bool qTwo = false; bool qThree = false; bool qFour = false;
+            bool qFive = false; bool qSix = false; bool qSeven = false; bool qEight = false;
 
             while (qOne == false)
             {
+                //Checks for value of designated answer
                 if (captainTwo.IsChecked.Value == true)
                 {
-                    correct++;
-                    qOne = true;
+                    correct++; //+1 to the correct counter
+                    qOne = true; //Sets the Boolean value to True, and ends the While Loop
                 }
+
+                //If anything but designated answer is returned, assumed to be incorrect
                 else
                 {
-                    incorrect++;
-                    q1.Foreground = new SolidColorBrush(Colors.Red);
-                    break;
+                    incorrect++; //+1 to the incorrect counter
+                    q1.Foreground = new SolidColorBrush(Colors.Red); //If question was incorrect, changes label color to red to signify it was answered wrong
+                    break; //removes self from current loop to begin next while loop for the next question
                 }
             }
             
@@ -164,11 +164,14 @@ namespace Assign3Jagod
             
             while (qFive == false)
             {
+                //Checks the Selected Index for correct answer
                 if (comboTony.SelectedIndex == 0)
                 {
                     correct++;
                     qFive = true;
                 }
+
+                //If anything other than the specified index is selected, answer is incorrect
                 else
                 {
                     incorrect++;
@@ -195,14 +198,17 @@ namespace Assign3Jagod
 
             while (qSeven == false)
             {
-                string aDead;
-                aDead = txtboxOne.Text.ToLower();
+                string aDead; //Creates a new string for taking in the user written text
+                aDead = txtboxOne.Text.ToLower(); //Sets the input equal to the new string, from the selected textBox, and sets it all to lower case
 
+                //Checks for correct, written answer (no typos allowed)
                 if (aDead == "deadpool")
                 {
                     correct++;
                     qSeven = true;
                 }
+
+                //If answer was written incorrectly, or just incorrect
                 else
                 {
                     incorrect++;
@@ -246,14 +252,8 @@ namespace Assign3Jagod
                                 "Average Score: " + avgScore + "%");
 
                 //Reset all Boolean Values
-                qOne = false;
-                qTwo = false;
-                qThree = false;
-                qFour = false;
-                qFive = false;
-                qSix = false;
-                qSeven = false;
-                qEight = false;
+                qOne = false; qTwo = false; qThree = false; qFour = false;
+                qFive = false; qSix = false; qSeven = false; qEight = false;
             }
         }
 
