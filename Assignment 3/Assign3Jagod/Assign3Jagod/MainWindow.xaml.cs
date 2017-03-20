@@ -68,61 +68,72 @@ namespace Assign3Jagod
                     break;
                 }
             }
-            /*
+            
             while (qThree == false)
             {
-                //Creates an Array of Correct Answers
-                CheckBox[] galaxyAnswers = new CheckBox[] { galaxyOne, galaxyThree, galaxyFour, galaxyFive };
-
+                //If the Incorrect Answer was listed, Incorrect Answer will be triggered instead
                 if (galaxyTwo.IsChecked.Value == true)
                 {
-                    //If the Incorrect Answer was listed, Incorrect Answer will be triggered instead
                     incorrect++;
+                    q3.Foreground = new SolidColorBrush(Colors.Red);
                     break;
                 }
-
+                /*
                 else if (galaxyTwo.IsChecked.Value == false)
                 {
+                    //Creates an Array of Correct Answers
+                    CheckBox[] galaxyAnswers = new CheckBox[] { galaxyOne, galaxyThree, galaxyFour, galaxyFive };
+
                     foreach (CheckBox gA in galaxyAnswers)
                     {
                         double tempcorrect = 0;
 
-                        if (gA.IsChecked.Value == true)
+                        while (gA.IsChecked.Value == true)
                         {
                             //Because there are four correct answers, 0.25 points will be awarded for each part correct
                             //It is possible to miss a correct answer!
-                            tempcorrect += 0.25;
+                            tempcorrect = tempcorrect + 0.25;
+                        }
 
-                            if (tempcorrect == 1)
-                            {
-                                MessageBox.Show("Question Three: Correct");
-                                correct++;
-                                qThree = true;
-                            }
-                            else
-                                continue;
+                        if (tempcorrect == 1)
+                        {
+                            correct++;
+                            qThree = true;
+                        }
+                        else if (tempcorrect <= 0.75)
+                        {
+                            MessageBox.Show("Partially Correct - Did you get ALL of the members?");
+                            incorrect++;
+                            q3.Foreground = new SolidColorBrush(Colors.Red);
+                            break;
                         }
                         else
                             break;
                     }
-                }
+                    
+                }*/
                 else
-                    break;
+                {
+                    correct++;
+                    qThree = true;
+                }
             }
-            /*
+            
             while (qFour == false)
             {
-                //Creates an Array of Correct Answers
-                CheckBox[] civilAnswers = new CheckBox[] { civilOne, civilTwo, civilThree, civilFour };
-
                 if (civilFive.IsChecked.Value == true)
                 {
                     //If the Incorrect Answer was listed, Incorrect Answer will be triggered instead
                     incorrect++;
+                    q4.Foreground = new SolidColorBrush(Colors.Red);
+                    break;
                 }
-
-                else
+                /*
+                else if(civilFive.IsChecked.Value == false)
                 {
+                    //Creates an Array of Correct Answers
+                    CheckBox[] civilAnswers = new CheckBox[] { civilOne, civilTwo, civilThree, civilFour };
+
                     foreach (CheckBox cA in civilAnswers)
                     {
                         double tempcorrect = 0;
@@ -143,9 +154,14 @@ namespace Assign3Jagod
                         else
                             break;
                     }
+                }*/
+                else
+                {
+                    correct++;
+                    qFour = true;
                 }
             }
-            */
+            
             while (qFive == false)
             {
                 if (comboTony.SelectedIndex == 0)
@@ -228,6 +244,16 @@ namespace Assign3Jagod
                 MessageBox.Show("Correct: " + correct + Environment.NewLine + "Incorrect: " + incorrect + 
                                 Environment.NewLine + "All incorrectly answered questions have been highlighted in red" + Environment.NewLine +
                                 "Average Score: " + avgScore + "%");
+
+                //Reset all Boolean Values
+                qOne = false;
+                qTwo = false;
+                qThree = false;
+                qFour = false;
+                qFive = false;
+                qSix = false;
+                qSeven = false;
+                qEight = false;
             }
         }
 
