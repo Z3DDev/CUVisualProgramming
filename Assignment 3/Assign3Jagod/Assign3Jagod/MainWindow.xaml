@@ -73,7 +73,7 @@
                     <TextBox x:Name="txtboxTwo" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="351,221,0,0"/>
                     <Image x:Name="picOne" Height="109" VerticalAlignment="Top" Margin="31,92,273,0" Source="d228fb5c7a96e1421bf02a7557cf4764761a4ec2.png" StretchDirection="DownOnly"/>
                     <Image x:Name="picTwo" HorizontalAlignment="Left" Height="148" VerticalAlignment="Top" Width="131" Margin="340,68,0,0" Source="Hawkeye-PNG-File.png"/>
-                    <Label x:Name="q7" Content="Who are these characters?" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="178,10,0,0" Width="146"/>
+                    <Label x:Name="q7" Content="Who are these characters?" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="178,10,0,0" Width="160"/>
                 </Grid>
             </TabItem>
         </TabControl>

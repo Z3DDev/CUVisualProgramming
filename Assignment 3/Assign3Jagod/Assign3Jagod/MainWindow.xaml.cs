@@ -50,6 +50,7 @@ namespace Assign3Jagod
                 {
                     incorrect++; //+1 to the incorrect counter
                     q1.Foreground = new SolidColorBrush(Colors.Red); //If question was incorrect, changes label color to red to signify it was answered wrong
+                    captainTwo.Foreground = new SolidColorBrush(Colors.Red); //If answer was incorrect, change correct answer to the color red
                     break; //removes self from current loop to begin next while loop for the next question
                 }
             }
@@ -65,6 +66,7 @@ namespace Assign3Jagod
                 {
                     incorrect++;
                     q2.Foreground = new SolidColorBrush(Colors.Red);
+                    antOne.Foreground = new SolidColorBrush(Colors.Red);
                     break;
                 }
             }
@@ -72,46 +74,19 @@ namespace Assign3Jagod
             while (qThree == false)
             {
                 //If the Incorrect Answer was listed, Incorrect Answer will be triggered instead
-                if (galaxyTwo.IsChecked.Value == true)
+                if ((galaxyTwo.IsChecked.Value == true) || (galaxyOne.IsChecked.Value == false) || (galaxyThree.IsChecked.Value == false) || (galaxyFour.IsChecked.Value == false) || (galaxyFive.IsChecked.Value == false))
                 {
                     incorrect++;
                     q3.Foreground = new SolidColorBrush(Colors.Red);
-                    break;
-                }
-                /*
-                else if (galaxyTwo.IsChecked.Value == false)
-                {
-                    //Creates an Array of Correct Answers
-                    CheckBox[] galaxyAnswers = new CheckBox[] { galaxyOne, galaxyThree, galaxyFour, galaxyFive };
 
+                    CheckBox[] galaxyAnswers = new CheckBox[] { galaxyOne, galaxyThree, galaxyFour, galaxyFive };
                     foreach (CheckBox gA in galaxyAnswers)
                     {
-                        double tempcorrect = 0;
-
-                        while (gA.IsChecked.Value == true)
-                        {
-                            //Because there are four correct answers, 0.25 points will be awarded for each part correct
-                            //It is possible to miss a correct answer!
-                            tempcorrect = tempcorrect + 0.25;
-                        }
-
-                        if (tempcorrect == 1)
-                        {
-                            correct++;
-                            qThree = true;
-                        }
-                        else if (tempcorrect <= 0.75)
-                        {
-                            MessageBox.Show("Partially Correct - Did you get ALL of the members?");
-                            incorrect++;
-                            q3.Foreground = new SolidColorBrush(Colors.Red);
-                            break;
-                        }
-                        else
-                            break;
+                        gA.Foreground = new SolidColorBrush(Colors.Red);
                     }
-                    
-                }*/
+  
+                    break;
+                }
                 else
                 {
                     correct++;
@@ -121,40 +96,21 @@ namespace Assign3Jagod
             
             while (qFour == false)
             {
-                if (civilFive.IsChecked.Value == true)
+                if ((civilFive.IsChecked.Value == true) || (civilOne.IsChecked.Value == false) || (civilTwo.IsChecked.Value == false) || (civilThree.IsChecked.Value == false) || (civilFour.IsChecked.Value == false))
                 {
                     //If the Incorrect Answer was listed, Incorrect Answer will be triggered instead
                     incorrect++;
                     q4.Foreground = new SolidColorBrush(Colors.Red);
-                    break;
-                }
-                /*
-                else if(civilFive.IsChecked.Value == false)
-                {
-                    //Creates an Array of Correct Answers
-                    CheckBox[] civilAnswers = new CheckBox[] { civilOne, civilTwo, civilThree, civilFour };
 
+                    CheckBox[] civilAnswers = new CheckBox[] { civilOne, civilTwo, civilThree, civilFour };
                     foreach (CheckBox cA in civilAnswers)
                     {
-                        double tempcorrect = 0;
-
-                        if (cA.IsChecked.Value == true)
-                        {
-                            //Because there are four correct answers, 0.25 points will be awarded for each part correct
-                            //It is possible to miss a correct answer!
-                            tempcorrect += 0.25;
-                        }
-
-                        else if (tempcorrect == 1)
-                        {
-                            correct++;
-                            qFour = true;
-                        }
-
-                        else
-                            break;
+                        cA.Foreground = new SolidColorBrush(Colors.Red);
                     }
-                }*/
+
+                    break;
+                }
+
                 else
                 {
                     correct++;
@@ -176,9 +132,10 @@ namespace Assign3Jagod
                 {
                     incorrect++;
                     q5.Foreground = new SolidColorBrush(Colors.Red);
+                    comboTony.SelectedItem = 0;
+                    comboTony.Foreground = new SolidColorBrush(Colors.Red);
                     break;
                 }
-
             }
 
             while (qSix == false)
@@ -192,6 +149,8 @@ namespace Assign3Jagod
                 {
                     incorrect++;
                     q6.Foreground = new SolidColorBrush(Colors.Red);
+                    comboGems.SelectedItem = 4;
+                    comboGems.Foreground = new SolidColorBrush(Colors.Red);
                     break;
                 }
             }
@@ -213,6 +172,8 @@ namespace Assign3Jagod
                 {
                     incorrect++;
                     q7.Foreground = new SolidColorBrush(Colors.Red);
+                    txtboxOne.Text = "deadpool";
+                    txtboxOne.Foreground = new SolidColorBrush(Colors.Red);
                     break;
                 }
             }
@@ -231,6 +192,8 @@ namespace Assign3Jagod
                 {
                     incorrect++;
                     q7.Foreground = new SolidColorBrush(Colors.Red);
+                    txtboxTwo.Text = "hawkeye";
+                    txtboxTwo.Foreground = new SolidColorBrush(Colors.Red);
                     break;
                 }
             }
@@ -285,6 +248,39 @@ namespace Assign3Jagod
 
             //Display to the user that all answers have been cleared
             MessageBox.Show("Your Answers Have Been Cleared");
+
+            //Reset all Changed Colors for Questions
+            q1.Foreground = new SolidColorBrush(Colors.Black);
+            q2.Foreground = new SolidColorBrush(Colors.Black);
+            q3.Foreground = new SolidColorBrush(Colors.Black);
+            q4.Foreground = new SolidColorBrush(Colors.Black);
+            q5.Foreground = new SolidColorBrush(Colors.Black);
+            q6.Foreground = new SolidColorBrush(Colors.Black);
+            q7.Foreground = new SolidColorBrush(Colors.Black);
+
+            //Reset all Changed Colors for Answers
+            captainTwo.Foreground = new SolidColorBrush(Colors.Black); //Question One
+            antOne.Foreground = new SolidColorBrush(Colors.Black); //Question Two
+
+            //Question Three
+            CheckBox[] galaxyAnswers = new CheckBox[] { galaxyOne, galaxyThree, galaxyFour, galaxyFive };
+            foreach (CheckBox gA in galaxyAnswers)
+            {
+                gA.Foreground = new SolidColorBrush(Colors.Black); 
+            }
+
+            //Question Four
+            CheckBox[] civilAnswers = new CheckBox[] { civilOne, civilTwo, civilThree, civilFour };
+            foreach (CheckBox cA in civilAnswers)
+            {
+                cA.Foreground = new SolidColorBrush(Colors.Black); 
+            }
+
+            comboTony.Foreground = new SolidColorBrush(Colors.Black); //Question Five
+            comboGems.Foreground = new SolidColorBrush(Colors.Black); //Question Six
+
+            txtboxOne.Foreground = new SolidColorBrush(Colors.Black); //Question Seven
+            txtboxTwo.Foreground = new SolidColorBrush(Colors.Black); //Question Eight
         }
     }
 }
