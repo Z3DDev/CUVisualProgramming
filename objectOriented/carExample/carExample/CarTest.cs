@@ -18,11 +18,15 @@ namespace carExample
             c1.printString();
             c2.printString();
 
+            ElectricCar e = new ElectricCar(50, "pink", "ten", 40, 30, 20);
+            Console.WriteLine("Electric" + Environment.NewLine + e);
+
             Console.WriteLine(c1);
             Console.WriteLine(c2);
             Console.WriteLine(c1.ToString());
             Console.WriteLine(c2.ToString());
-
+            Console.WriteLine(Car.count);
+            Car.sharedCount();
             Console.ReadKey();
         }
     }
