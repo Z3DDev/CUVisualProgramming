@@ -50,7 +50,7 @@
                         <ColumnDefinition Width="197*"/>
                     </Grid.ColumnDefinitions>
                     <ComboBox x:Name="comboTony" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="75,84,0,0" Grid.Column="1">
-                        <ComboBoxItem>Philanthropist</ComboBoxItem>
+                        <ComboBoxItem x:Name="philTony">Philanthropist</ComboBoxItem>
                         <ComboBoxItem>Millionaire</ComboBoxItem>
                         <ComboBoxItem>Entrepreneur</ComboBoxItem>
                         <ComboBoxItem>Caring</ComboBoxItem>
@@ -60,7 +60,7 @@
                         <ComboBoxItem>Time</ComboBoxItem>
                         <ComboBoxItem>Space</ComboBoxItem>
                         <ComboBoxItem>Mind</ComboBoxItem>
-                        <ComboBoxItem>Soul</ComboBoxItem>
+                        <ComboBoxItem x:Name="soulGem">Soul</ComboBoxItem>
                         <ComboBoxItem>Power</ComboBoxItem>
                     </ComboBox>
                     <Label x:Name="q5" Content="Tony Stark is often described as being what?" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,53,0,0" Width="255" Grid.Column="1"/>

@@ -50,7 +50,7 @@ namespace Assign3Jagod
                 {
                     incorrect++; //+1 to the incorrect counter
                     q1.Foreground = new SolidColorBrush(Colors.Red); //If question was incorrect, changes label color to red to signify it was answered wrong
-                    captainTwo.Foreground = new SolidColorBrush(Colors.Red); //If answer was incorrect, change correct answer to the color red
+                    captainTwo.Foreground = new SolidColorBrush(Colors.Green); //If answer was incorrect, change correct answer to the color red
                     break; //removes self from current loop to begin next while loop for the next question
                 }
             }
@@ -66,7 +66,7 @@ namespace Assign3Jagod
                 {
                     incorrect++;
                     q2.Foreground = new SolidColorBrush(Colors.Red);
-                    antOne.Foreground = new SolidColorBrush(Colors.Red);
+                    antOne.Foreground = new SolidColorBrush(Colors.Green);
                     break;
                 }
             }
@@ -82,7 +82,7 @@ namespace Assign3Jagod
                     CheckBox[] galaxyAnswers = new CheckBox[] { galaxyOne, galaxyThree, galaxyFour, galaxyFive };
                     foreach (CheckBox gA in galaxyAnswers)
                     {
-                        gA.Foreground = new SolidColorBrush(Colors.Red);
+                        gA.Foreground = new SolidColorBrush(Colors.Green);
                     }
   
                     break;
@@ -105,7 +105,7 @@ namespace Assign3Jagod
                     CheckBox[] civilAnswers = new CheckBox[] { civilOne, civilTwo, civilThree, civilFour };
                     foreach (CheckBox cA in civilAnswers)
                     {
-                        cA.Foreground = new SolidColorBrush(Colors.Red);
+                        cA.Foreground = new SolidColorBrush(Colors.Green);
                     }
 
                     break;
@@ -132,8 +132,8 @@ namespace Assign3Jagod
                 {
                     incorrect++;
                     q5.Foreground = new SolidColorBrush(Colors.Red);
-                    comboTony.SelectedItem = 0;
-                    comboTony.Foreground = new SolidColorBrush(Colors.Red);
+                    philTony.Foreground = new SolidColorBrush(Colors.Green);
+                    comboTony.SelectedIndex = 0;
                     break;
                 }
             }
@@ -149,8 +149,8 @@ namespace Assign3Jagod
                 {
                     incorrect++;
                     q6.Foreground = new SolidColorBrush(Colors.Red);
-                    comboGems.SelectedItem = 4;
-                    comboGems.Foreground = new SolidColorBrush(Colors.Red);
+                    soulGem.Foreground = new SolidColorBrush(Colors.Green);
+                    comboGems.SelectedIndex = 4;
                     break;
                 }
             }
@@ -173,7 +173,7 @@ namespace Assign3Jagod
                     incorrect++;
                     q7.Foreground = new SolidColorBrush(Colors.Red);
                     txtboxOne.Text = "deadpool";
-                    txtboxOne.Foreground = new SolidColorBrush(Colors.Red);
+                    txtboxOne.Foreground = new SolidColorBrush(Colors.Green);
                     break;
                 }
             }
@@ -193,7 +193,7 @@ namespace Assign3Jagod
                     incorrect++;
                     q7.Foreground = new SolidColorBrush(Colors.Red);
                     txtboxTwo.Text = "hawkeye";
-                    txtboxTwo.Foreground = new SolidColorBrush(Colors.Red);
+                    txtboxTwo.Foreground = new SolidColorBrush(Colors.Green);
                     break;
                 }
             }
@@ -276,8 +276,8 @@ namespace Assign3Jagod
                 cA.Foreground = new SolidColorBrush(Colors.Black); 
             }
 
-            comboTony.Foreground = new SolidColorBrush(Colors.Black); //Question Five
-            comboGems.Foreground = new SolidColorBrush(Colors.Black); //Question Six
+            philTony.Foreground = new SolidColorBrush(Colors.Black); //Question Five
+            soulGem.Foreground = new SolidColorBrush(Colors.Black); //Question Six
 
             txtboxOne.Foreground = new SolidColorBrush(Colors.Black); //Question Seven
             txtboxTwo.Foreground = new SolidColorBrush(Colors.Black); //Question Eight
