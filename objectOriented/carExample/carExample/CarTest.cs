@@ -21,6 +21,9 @@ namespace carExample
             ElectricCar e = new ElectricCar(50, "pink", "ten", 40, 30, 20);
             Console.WriteLine("Electric" + Environment.NewLine + e);
 
+            Car c3 = new ElectricCar(50, "pink", "ten", 40, 30, 20);
+            Console.WriteLine("Test " + c3);
+
             Console.WriteLine(c1);
             Console.WriteLine(c2);
             Console.WriteLine(c1.ToString());
