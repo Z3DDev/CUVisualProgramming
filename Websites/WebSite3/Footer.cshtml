@@ -1,0 +1,30 @@
+﻿@{
+    Page.Title = "Title goes here";
+    //Layout = "Your Layout Page goes here";
+}
+
+<div>
+    <p>This is the Footer</p>
+    @{ 
+        if (IsPost)
+        {
+            string theName = Request["name"];
+            string theBday = Request["bday"];
+            
+            <p>You Entered
+                <b>@theName</b>
+                and <b>@theBday</b>
+            </p>
+        }
+        else
+        {
+            <form method="post" action="">
+                Enter your name
+                <input name="name" type="text" />
+                Enter your bday
+                <input name="bday" type="text" />
+                <input name="submit" type="submit" value="submit" />
+            </form>
+        }
+    }
+</div>
