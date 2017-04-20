@@ -8,7 +8,7 @@ For larger projects/assignments, separate repositories will be utilized. All pro
 
 ## Assignment List
 - Advanced Visual Calculator
-    - Partner Project ( collaborated with @wood198/ )
+    - Partner Project (collaborated with Ashley Wood (@wood198))
     - Location: **https://github.com/Jagod101/VisualCalculator**
 
 - Personal WPF Quiz
