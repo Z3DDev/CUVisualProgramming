@@ -8,14 +8,30 @@ For larger projects/assignments, separate repositories will be utilized. All pro
 
 ## Assignment List
 - Advanced Visual Calculator
-    - Partner Project (collaborated with Ashley Wood)
-    - Location: https://github.com/Jagod101/VisualCalculator
+    - Partner Project (collaborated with @wood198)
+    - Location: **https://github.com/Jagod101/VisualCalculator**
 
 - Personal WPF Quiz
     - Individual Project
-    - Location: Assign3Jagod
+    - Location: **Assign3Jagod**
+
+- Inheritance
+    - Individual Project
+    - Location: **Assign4Jagod**
+
+- Validation
+    - Individual Project
+    - Location: Websites/**WebSite5**
 
 - More Projects Coming (To Be Updated)
+
+## Programming Languages
+- [] JavaScript
+- [] C#
+- [] HTML and CSHTML
+- [] XML
+- [] ASP.NET
+- [] CSS
 
 ### Authors
 Zachary Jagoda (Student)
