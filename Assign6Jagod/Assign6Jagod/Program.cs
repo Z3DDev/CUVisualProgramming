@@ -10,12 +10,13 @@ namespace Assign6Jagod
     {
         static void Main(string[] args)
         {
-            Checking CheckA = new Checking();
-            Checking CheckB = new Checking();
-            Saving SaveA = new Saving();
-            Saving SaveB = new Saving();
+            Checking CheckA = new Checking(15);
+            Checking CheckB = new Checking(10);
+            Saving SaveA = new Saving(1, 10);
+            Saving SaveB = new Saving(5, 15);
             Person PersonA = new Person("Bob", CheckA, SaveA);
             Person PersonB = new Person("Alice", CheckB, SaveB);
+
 
         }
     }

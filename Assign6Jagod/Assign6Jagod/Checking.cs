@@ -6,13 +6,18 @@ using System.Threading.Tasks;
 
 namespace Assign6Jagod
 {
+    //Checking inherits Account
     class Checking : Account
     {
-        int balance;
-
-        String ToString()
+        //Checking Constructor takes in balance, extended from Account
+        public Checking(int balance) : base(balance)
         {
-            return "Checking Account  balance" + balance;
+            this.balance = balance;
+        }
+
+        public override String ToString()
+        {
+            return "Checking Account balance" + balance;
         }
     }
 }
