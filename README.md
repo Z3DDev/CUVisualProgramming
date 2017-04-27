@@ -7,21 +7,25 @@ All files uploaded to the repository consist of completed tasks from lecture sli
 For larger projects/assignments, separate repositories will be utilized. All projects/assignments will be listed within this README and linked to the appropriate repository for reference
 
 ## Assignment List
-- Advanced Visual Calculator
+- Advanced Visual Calculator (2)
     - Partner Project (collaborated with Ashley Wood (@wood198))
     - Location: **https://github.com/Jagod101/VisualCalculator**
 
-- Personal WPF Quiz
+- Personal WPF Quiz (3)
     - Individual Project
     - Location: **Assign3Jagod**
 
-- Inheritance
+- Inheritance (4)
     - Individual Project
     - Location: **Assign4Jagod**
 
-- Validation
+- Validation (5)
     - Individual Project
     - Location: Websites/**WebSite5**
+
+- Getters and Setters (6)
+    - Individual Project
+    - Location **TBD**
 
 - More Projects Coming (To Be Updated)
 

@@ -11,11 +11,13 @@
         }
         .auto-style2 {
             background-color: #FFCC99;
+            font:
         }
         .auto-style3 {
             text-align: right;
             width: 1159px;
-            background-color: #FFCC99;
+            background-color: steelblue;
+            font: bold 24px comic-sans;
         }
         .auto-style4 {
             width: 296px;
