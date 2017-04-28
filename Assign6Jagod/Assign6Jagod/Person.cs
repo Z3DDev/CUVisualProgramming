@@ -23,15 +23,46 @@ namespace Assign6Jagod
             this.accountS = accountS;
         }
 
-        //Retrieves name from program input
+        //Getter for Name
         public string getName()
         {
             return name;
         }
 
+        //Setter for Name
+        public void setName(string newName)
+        {
+            name = newName;
+        }
+
+        //Getter for AccountC (Checking)
+        public Checking getaccountC()
+        {
+            return accountC;
+        }
+
+        //Setter for AccountC (Checking)
+        public void setaccountC(Checking newaccountC)
+        {
+            accountC = newaccountC;
+        }
+
+        //Getter for AccountS (Saving)
+        public Saving getaccountS()
+        {
+            return accountS;
+        }
+
+        //Setter for AccountS (Saving)
+        public void setaccountS(Saving newaccountS)
+        {
+            accountS = newaccountS;
+        }
+
+        //ToString for Person
         public override string ToString()
         {
-            return "Owner " + name + "\n Account infochecking " + accountC.ToString() + " saving " + accountS.ToString();
+            return "Owner: " + name + "\n Account Infochecking " + accountC.ToString() + " Saving " + accountS.ToString();
         }
     }
 }

@@ -19,9 +19,23 @@ namespace Assign6Jagod
             this.interest = interest;
         }
 
+        //Getter for Saving
+        public int getSaving()
+        {
+            return interest + balance;
+        }
+
+        //Setter for Saving
+        public void setSaving(int newInterest, int newBalance)
+        {
+            interest = newInterest;
+            balance = newBalance;
+        }
+
+        //ToString for Saving
         public override String ToString()
         {
-            return "Saving Account balance " + balance + "interest " + interest;
+            return "Account Balance: " + balance + " Interest: " + interest;
         }
     }
 }

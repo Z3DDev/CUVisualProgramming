@@ -38,6 +38,19 @@ namespace Assign6Jagod
                 return false;
         }
 
+        //Getter for Balance
+        public int getBalance()
+        {
+            return balance;
+        }
+
+        //Setter for Balance
+        public void setBalance(int newBalance)
+        {
+            balance = newBalance;
+        }
+
+        //ToString for Account
         public override String ToString()
         {
             return "Generic Account " + balance;

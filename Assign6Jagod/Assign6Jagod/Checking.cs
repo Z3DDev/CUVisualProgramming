@@ -14,10 +14,23 @@ namespace Assign6Jagod
         {
             this.balance = balance;
         }
+        
+        //Getter for Checking
+        public int getChecking()
+        {
+            return balance;
+        }
 
+        //Setter for Checking
+        public void setChecking(int newBalance)
+        {
+            balance = newBalance;
+        }
+
+        //ToString for Checking
         public override String ToString()
         {
-            return "Checking Account balance" + balance;
+            return "Checking Account Balance: " + balance;
         }
     }
 }
