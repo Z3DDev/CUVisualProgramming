@@ -9,16 +9,18 @@ namespace Assign6Jagod
     class Person
     {
         //Setup of Name through String
-        public String name;
+        public string name;
         //Private Setup of Checking Account
-        private static Checking accountC;
+        public Checking accountC;
         //Private Setup of Savings Account
-        private static Saving accountS;
+        public Saving accountS;
 
         //Contrustor for Person, takes in Name, Checking, and Saving
         public Person(string name, Checking accountC, Saving accountS)
         {
             this.name = name;
+            this.accountC = accountC;
+            this.accountS = accountS;
         }
 
         //Retrieves name from program input
@@ -27,7 +29,7 @@ namespace Assign6Jagod
             return name;
         }
 
-        public override String ToString()
+        public override string ToString()
         {
             return "Owner " + name + "\n Account infochecking " + accountC.ToString() + " saving " + accountS.ToString();
         }
