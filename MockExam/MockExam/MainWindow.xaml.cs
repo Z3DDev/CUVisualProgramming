@@ -122,13 +122,13 @@ namespace MockExam
             switch(color)
             {
                 case 1:
-                    MessageBox.Show("Your color is Red");
+                    MessageBox.Show("Your choose Red");
                     break;
                 case 2:
-                    MessageBox.Show("Your color is Blue");
+                    MessageBox.Show("Your choose Blue");
                     break;
                 case 3:
-                    MessageBox.Show("Your color is Green");
+                    MessageBox.Show("Your choose Green");
                     break;
             }
         }
